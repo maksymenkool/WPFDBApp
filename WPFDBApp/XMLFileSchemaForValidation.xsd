@@ -1,0 +1,232 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:tns="MetaData" targetNamespace="MetaData">
+  <xs:element name="Server">
+    <xs:complexType>
+      <xs:sequence minOccurs="0">
+        <xs:element name="Databases">
+          <xs:complexType>
+            <xs:sequence minOccurs="0">
+              <xs:element maxOccurs="unbounded" name="Database">
+                <xs:complexType>
+                  <xs:sequence minOccurs="0">
+                    <xs:element name="Tables">
+                      <xs:complexType>
+                        <xs:sequence minOccurs="0">
+                          <xs:element maxOccurs="unbounded" name="Table">
+                            <xs:complexType>
+                              <xs:sequence minOccurs="0">
+                                <xs:element name="Columns">
+                                  <xs:complexType>
+                                    <xs:sequence minOccurs="0">
+                                      <xs:element maxOccurs="unbounded" name="Column">
+                                        <xs:complexType>
+                                          <xs:attribute name="name" type="xs:string" use="required" />
+                                          <xs:attribute name="data_type" type="xs:string" use="required" />
+                                          <xs:attribute name="max_length" type="xs:short" use="required" />
+                                          <xs:attribute name="scale" type="xs:unsignedByte" use="required" />
+                                          <xs:attribute name="precision" type="xs:unsignedByte" use="required" />
+                                          <xs:attribute name="is_identity" type="xs:string" use="required" />
+                                          <xs:attribute name="is_nullable" type="xs:string" use="required" />
+                                          <xs:attribute name="column_default" type="xs:string" use="optional" />
+                                          <xs:attribute name="seed_value" type="xs:unsignedByte" use="optional" />
+                                          <xs:attribute name="increment_value" type="xs:unsignedByte" use="optional" />
+										  <xs:attribute name="is_selected" type="xs:boolean" use="optional" />
+										  <xs:attribute name="is_expanded" type="xs:boolean" use="optional" />
+										  <xs:attribute name="is_empty" type="xs:boolean" use="optional" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="name" type="xs:string" use="required" />
+									<xs:attribute name="is_selected" type="xs:boolean" use="optional" />
+									<xs:attribute name="is_expanded" type="xs:boolean" use="optional" />
+									<xs:attribute name="is_empty" type="xs:boolean" use="optional" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Keys">
+                                  <xs:complexType>
+                                    <xs:sequence minOccurs="0">
+                                      <xs:element minOccurs="0" name="PrimaryKey">
+                                        <xs:complexType>
+                                          <xs:attribute name="name" type="xs:string" use="required" />
+                                          <xs:attribute name="is_system_named" type="xs:string" use="required" />
+                                          <xs:attribute name="included_columns" type="xs:string" use="required" />
+                                          <xs:attribute name="type_desc" type="xs:string" use="required" />
+										  <xs:attribute name="is_primary_key" type="xs:string" use="required" />
+										  <xs:attribute name="is_selected" type="xs:boolean" use="optional" />
+										  <xs:attribute name="is_expanded" type="xs:boolean" use="optional" />
+										  <xs:attribute name="is_empty" type="xs:boolean" use="optional" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                      <xs:element minOccurs="0" maxOccurs="unbounded" name="ForeignKey">
+                                        <xs:complexType>
+                                          <xs:attribute name="name" type="xs:string" use="required" />
+                                          <xs:attribute name="is_system_named" type="xs:string" use="required" />
+                                          <xs:attribute name="constraint_column_name" type="xs:string" use="required" />
+                                          <xs:attribute name="referenced_object" type="xs:string" use="required" />
+                                          <xs:attribute name="referenced_column_name" type="xs:string" use="required" />
+                                          <xs:attribute name="is_disabled" type="xs:string" use="required" />
+                                          <xs:attribute name="delete_referential_action_desc" type="xs:string" use="required" />
+                                          <xs:attribute name="update_referential_action_desc" type="xs:string" use="required" />
+										  <xs:attribute name="is_selected" type="xs:boolean" use="optional" />
+										  <xs:attribute name="is_expanded" type="xs:boolean" use="optional" />
+										  <xs:attribute name="is_empty" type="xs:boolean" use="optional" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="name" type="xs:string" use="required" />
+									<xs:attribute name="is_selected" type="xs:boolean" use="optional" />
+									<xs:attribute name="is_expanded" type="xs:boolean" use="optional" />
+									<xs:attribute name="is_empty" type="xs:boolean" use="optional" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Constraints">
+                                  <xs:complexType>
+                                    <xs:sequence minOccurs="0">
+                                      <xs:choice maxOccurs="unbounded">
+                                        <xs:element name="DefaultConstraint">
+                                          <xs:complexType>
+                                            <xs:attribute name="name" type="xs:string" use="required" />
+                                            <xs:attribute name="column_name" type="xs:string" use="required" />
+                                            <xs:attribute name="default_value" type="xs:string" use="required" />
+                                            <xs:attribute name="type_constraint" type="xs:string" use="required" />
+											<xs:attribute name="is_selected" type="xs:boolean" use="optional" />
+											<xs:attribute name="is_expanded" type="xs:boolean" use="optional" />
+										    <xs:attribute name="is_empty" type="xs:boolean" use="optional" />
+                                          </xs:complexType>
+                                        </xs:element>
+                                        <xs:element maxOccurs="unbounded" name="CheckConstraint">
+                                          <xs:complexType>
+                                            <xs:attribute name="name" type="xs:string" use="required" />
+                                            <xs:attribute name="check_value" type="xs:string" use="required" />
+                                            <xs:attribute name="type_constraint" type="xs:string" use="required" />
+											<xs:attribute name="is_selected" type="xs:boolean" use="optional" />
+											<xs:attribute name="is_expanded" type="xs:boolean" use="optional" />
+										    <xs:attribute name="is_empty" type="xs:boolean" use="optional" />
+                                          </xs:complexType>
+                                        </xs:element>
+                                      </xs:choice>
+                                    </xs:sequence>
+                                    <xs:attribute name="name" type="xs:string" use="required" />
+									<xs:attribute name="is_selected" type="xs:boolean" use="optional" />
+									<xs:attribute name="is_expanded" type="xs:boolean" use="optional" />
+									<xs:attribute name="is_empty" type="xs:boolean" use="optional" />
+                                  </xs:complexType>
+                                </xs:element>
+                                <xs:element name="Indexes">
+                                  <xs:complexType>
+                                    <xs:sequence minOccurs="0">
+                                      <xs:element maxOccurs="unbounded" name="Index">
+                                        <xs:complexType>
+                                          <xs:attribute name="name" type="xs:string" use="required" />
+                                          <xs:attribute name="is_system_named" type="xs:string" use="optional" />
+                                          <xs:attribute name="included_columns" type="xs:string" use="required" />
+                                          <xs:attribute name="type_desc" type="xs:string" use="required" />
+                                          <xs:attribute name="is_unique" type="xs:string" use="required" />
+										  <xs:attribute name="is_primary_key" type="xs:string" use="required" />
+										  <xs:attribute name="is_selected" type="xs:boolean" use="optional" />
+										  <xs:attribute name="is_expanded" type="xs:boolean" use="optional" />
+										  <xs:attribute name="is_empty" type="xs:boolean" use="optional" />
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="name" type="xs:string" use="required" />
+									<xs:attribute name="is_selected" type="xs:boolean" use="optional" />
+									<xs:attribute name="is_expanded" type="xs:boolean" use="optional" />
+									<xs:attribute name="is_empty" type="xs:boolean" use="optional" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="name" type="xs:string" use="required" />
+                              <xs:attribute name="create_date" type="xs:string" use="required" />
+                              <xs:attribute name="modify_date" type="xs:string" use="required" />
+					  		  <xs:attribute name="is_selected" type="xs:boolean" use="optional" />
+							  <xs:attribute name="is_expanded" type="xs:boolean" use="optional" />
+							  <xs:attribute name="is_empty" type="xs:boolean" use="optional" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="name" type="xs:string" use="required" />
+						<xs:attribute name="is_selected" type="xs:boolean" use="optional" />
+						<xs:attribute name="is_expanded" type="xs:boolean" use="optional" />
+						<xs:attribute name="is_empty" type="xs:boolean" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Procedures">
+                      <xs:complexType>
+                        <xs:sequence minOccurs="0">
+                          <xs:element maxOccurs="unbounded" name="Procedure">
+                            <xs:complexType>
+                              <xs:sequence minOccurs="0">
+                                <xs:element maxOccurs="unbounded" name="Parameter">
+                                  <xs:complexType>
+                                    <xs:attribute name="name" type="xs:string" use="required" />
+                                    <xs:attribute name="parameter_type" type="xs:string" use="required" />
+                                    <xs:attribute name="max_length" type="xs:short" use="optional" />
+                                    <xs:attribute name="is_output" type="xs:string" use="optional" />
+                                    <xs:attribute name="default_value" type="xs:string" use="optional" />
+									<xs:attribute name="is_selected" type="xs:boolean" use="optional" />
+									<xs:attribute name="is_expanded" type="xs:boolean" use="optional" />
+									<xs:attribute name="is_empty" type="xs:boolean" use="optional" />
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute name="name" type="xs:string" use="required" />
+                              <xs:attribute name="create_date" type="xs:string" use="required" />
+                              <xs:attribute name="modify_date" type="xs:string" use="required" />
+                              <xs:attribute name="definition" type="xs:string" use="optional" />
+							  <xs:attribute name="is_selected" type="xs:boolean" use="optional" />
+							  <xs:attribute name="is_expanded" type="xs:boolean" use="optional" />
+							  <xs:attribute name="is_empty" type="xs:boolean" use="optional" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="name" type="xs:string" use="required" />
+						<xs:attribute name="is_selected" type="xs:boolean" use="optional" />
+						<xs:attribute name="is_expanded" type="xs:boolean" use="optional" />
+						<xs:attribute name="is_empty" type="xs:boolean" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="Views">
+                      <xs:complexType>
+                        <xs:sequence minOccurs="0">
+                          <xs:element maxOccurs="unbounded" name="View">
+                            <xs:complexType>
+                              <xs:attribute name="name" type="xs:string" use="required" />
+                              <xs:attribute name="create_date" type="xs:string" use="required" />
+                              <xs:attribute name="modify_date" type="xs:string" use="required" />
+                              <xs:attribute name="definition" type="xs:string" use="optional" />
+							  <xs:attribute name="is_selected" type="xs:boolean" use="optional" />
+							  <xs:attribute name="is_expanded" type="xs:boolean" use="optional" />
+							  <xs:attribute name="is_empty" type="xs:boolean" use="optional" />
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="name" type="xs:string" use="required" />
+						<xs:attribute name="is_selected" type="xs:boolean" use="optional" />
+						<xs:attribute name="is_expanded" type="xs:boolean" use="optional" />
+						<xs:attribute name="is_empty" type="xs:boolean" use="optional" />
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute name="name" type="xs:string" use="required" />
+                  <xs:attribute name="create_date" type="xs:string" use="required" />
+                  <xs:attribute name="is_selected" type="xs:boolean" use="optional" />
+                  <xs:attribute name="is_expanded" type="xs:boolean" use="optional" />
+				  <xs:attribute name="is_empty" type="xs:boolean" use="optional" />
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+            <xs:attribute name="name" type="xs:string" use="required" />
+            <xs:attribute name="is_selected" type="xs:boolean" use="optional" />
+            <xs:attribute name="is_expanded" type="xs:boolean" use="optional" />
+			<xs:attribute name="is_empty" type="xs:boolean" use="optional" />
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+      <xs:attribute name="name" type="xs:string" use="required" />
+      <xs:attribute name="is_selected" type="xs:boolean" use="optional" />
+      <xs:attribute name="is_expanded" type="xs:boolean" use="optional" />
+	  <xs:attribute name="is_empty" type="xs:boolean" use="optional" />
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

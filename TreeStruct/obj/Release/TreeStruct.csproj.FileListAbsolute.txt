@@ -1,0 +1,4 @@
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\TreeStruct\bin\Release\TreeStruct.dll
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\TreeStruct\bin\Release\TreeStruct.pdb
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\TreeStruct\obj\Release\TreeStruct.dll
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\TreeStruct\obj\Release\TreeStruct.pdb

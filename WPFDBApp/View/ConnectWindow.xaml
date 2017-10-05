@@ -1,0 +1,77 @@
+﻿<Window x:Class="WPFDBApp.View.ConnectWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        mc:Ignorable="d"
+        x:Name="This"
+        Title="Connect to Server"
+        Height="320" Width="480" ResizeMode="NoResize"
+        FontFamily="Arial" FontSize="12"
+        Icon="../Images/cts.jpg" WindowStartupLocation="CenterScreen">
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        
+        <GroupBox Grid.Row="0" Margin="0 10 10 0">
+            <GroupBox.Header>
+                <TextBlock Text="Sql Connection" FontSize="14" FontWeight="DemiBold" />
+            </GroupBox.Header>
+            <Grid Margin="0 10">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto" />
+                    <ColumnDefinition Width="1*" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" />
+                    <RowDefinition Height="Auto" />
+                </Grid.RowDefinitions>
+                <TextBlock Text="Server name: " VerticalAlignment="Center" Margin="5" Grid.Column="0" Grid.Row="0" />
+                <Grid Grid.Column="1" Grid.Row="0" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="1*" />
+                        <ColumnDefinition Width="Auto" />
+                    </Grid.ColumnDefinitions>
+                    <ComboBox Margin="5" ItemsSource="{Binding Servers}" IsEditable="True"
+                        SelectedItem="{Binding SelectedServer, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                        Text= "{Binding EditedServerName, UpdateSourceTrigger=LostFocus}"/>
+                </Grid>
+
+                <GroupBox Header="Authentication:" Grid.Column="0" Grid.Row="2" Grid.ColumnSpan="2" Margin="3">
+                    <StackPanel>
+                        <RadioButton Content="Windows Authentication" Margin="5" x:Name="SqlAuthTypeWindows" IsChecked="True"/>
+                        <RadioButton Content="Sql Authentication" Margin="5" x:Name="SqlAuthTypeSql" IsChecked="{Binding IsAuth, Mode=TwoWay}"/>
+                        <Grid IsEnabled="{Binding ElementName=SqlAuthTypeSql, Path=IsChecked}">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto" />
+                                <ColumnDefinition Width="1*" />
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" />
+                                <RowDefinition Height="Auto" />
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Text="Username: " Grid.Column="0" Grid.Row="0" Margin="3" VerticalAlignment="Center" />
+                            <TextBox Grid.Column="1" Grid.Row="0" Margin="3" Text="{Binding UserName, UpdateSourceTrigger=PropertyChanged}" />
+                            <TextBlock Text="Password: " Grid.Column="0" Grid.Row="1" Margin="3" VerticalAlignment="Center" />
+                            <PasswordBox x:Name="passwordBox" Grid.Column="1" Grid.Row="1" Margin="3" />
+
+                        </Grid>
+                    </StackPanel>
+                </GroupBox>
+
+            </Grid>
+        </GroupBox>
+        
+        <Grid Grid.Row="1" Margin="0 15">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="251*" />
+                <ColumnDefinition Width="223*" />
+            </Grid.ColumnDefinitions>
+            <Button x:Name="escButton" Content="Cancel" Command="{Binding CancelCommand}" Grid.Column="0" HorizontalAlignment="Left" Margin="5,10,0,0" VerticalAlignment="Top" Width="80" IsCancel="True" Height="20"/>
+            <Button x:Name="ConnectButton" Content="Connect" Command="{Binding ServerConnectCommand}" CommandParameter="{Binding ElementName=This}" Grid.Column="1" HorizontalAlignment="Right" Margin="0,10,15,0" VerticalAlignment="Top" IsDefault="True" Width="80"  Height="20"/>
+        </Grid>
+    </Grid>
+</Window>

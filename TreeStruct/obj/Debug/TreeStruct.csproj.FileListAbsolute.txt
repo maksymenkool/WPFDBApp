@@ -1,0 +1,5 @@
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\TreeStruct\bin\Debug\TreeStruct.dll
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\TreeStruct\bin\Debug\TreeStruct.pdb
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\TreeStruct\obj\Debug\TreeStruct.csprojResolveAssemblyReference.cache
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\TreeStruct\obj\Debug\TreeStruct.dll
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\TreeStruct\obj\Debug\TreeStruct.pdb

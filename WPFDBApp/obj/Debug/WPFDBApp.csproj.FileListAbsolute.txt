@@ -1,0 +1,160 @@
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\bin\Debug\Resources\sql.xshd
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\bin\Debug\XMLFileSchemaForValidation.xsd
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\bin\Debug\WPFDBApp.exe.config
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\bin\Debug\WPFDBApp.exe
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\bin\Debug\WPFDBApp.pdb
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\bin\Debug\DBClient.dll
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\bin\Debug\DotNetZip.dll
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\bin\Debug\ICSharpCode.AvalonEdit.dll
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\bin\Debug\log4net.dll
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\bin\Debug\TreeStruct.dll
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\bin\Debug\DBClient.pdb
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\bin\Debug\TreeStruct.pdb
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\bin\Debug\DotNetZip.xml
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\bin\Debug\ICSharpCode.AvalonEdit.xml
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\bin\Debug\log4net.xml
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\obj\Debug\WPFDBApp.csprojResolveAssemblyReference.cache
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\obj\Debug\View\ConnectWindow.baml
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\obj\Debug\View\ServerBrowseWindow.baml
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\obj\Debug\MainWindow.g.cs
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\obj\Debug\View\AboutWindow.g.cs
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\obj\Debug\View\ConnectWindow.g.cs
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\obj\Debug\View\ServerBrowseWindow.g.cs
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\obj\Debug\View\UserControls\TreeViewUserControl.g.cs
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\obj\Debug\App.g.cs
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\obj\Debug\WPFDBApp_MarkupCompile.cache
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\obj\Debug\WPFDBApp_MarkupCompile.lref
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\obj\Debug\App.baml
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\obj\Debug\MainWindow.baml
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\obj\Debug\View\AboutWindow.baml
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\obj\Debug\View\UserControls\TreeViewUserControl.baml
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\obj\Debug\WPFDBApp.g.resources
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\obj\Debug\WPFDBApp.Properties.Resources.resources
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\obj\Debug\WPFDBApp.csproj.GenerateResource.Cache
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\obj\Debug\WPFDBApp.exe
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\WPFDBApp\obj\Debug\WPFDBApp.pdb
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\WPFDBApp.exe.config
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\WPFDBApp.exe
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\WPFDBApp.pdb
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\Resources\sql.xshd
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\XMLFileSchemaForValidation.xsd
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\WPFDBApp.exe
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\WPFDBApp.pdb
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\DBClient.dll
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\DotNetZip.dll
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\ICSharpCode.AvalonEdit.dll
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\log4net.dll
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\TreeStruct.dll
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\DBClient.pdb
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\TreeStruct.pdb
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\DotNetZip.xml
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\ICSharpCode.AvalonEdit.xml
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\log4net.xml
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\WPFDBApp.csprojResolveAssemblyReference.cache
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\View\ConnectWindow.baml
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\View\ServerBrowseWindow.baml
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\MainWindow.g.cs
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\View\AboutWindow.g.cs
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\View\ConnectWindow.g.cs
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\View\ServerBrowseWindow.g.cs
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\View\UserControls\TreeViewUserControl.g.cs
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\App.g.cs
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\WPFDBApp_MarkupCompile.cache
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\WPFDBApp_MarkupCompile.lref
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\App.baml
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\MainWindow.baml
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\View\AboutWindow.baml
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\View\UserControls\TreeViewUserControl.baml
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\WPFDBApp.g.resources
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\WPFDBApp.Properties.Resources.resources
+C:\Users\Olha\Desktop\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\WPFDBApp.csproj.GenerateResource.Cache
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\WPFDBApp.exe.config
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\WPFDBApp.exe
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\WPFDBApp.pdb
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\Resources\sql.xshd
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\XMLFileSchemaForValidation.xsd
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\WPFDBApp.exe
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\WPFDBApp.pdb
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\DBClient.dll
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\DotNetZip.dll
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\ICSharpCode.AvalonEdit.dll
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\log4net.dll
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\Microsoft.Expression.Interactions.dll
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\System.Windows.Interactivity.dll
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\TreeStruct.dll
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\DBClient.pdb
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\TreeStruct.pdb
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\DotNetZip.xml
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\ICSharpCode.AvalonEdit.xml
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\log4net.xml
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\Microsoft.Expression.Interactions.xml
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\bin\Debug\System.Windows.Interactivity.xml
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\WPFDBApp.csprojResolveAssemblyReference.cache
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\View\ConnectWindow.baml
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\View\ServerBrowseWindow.baml
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\MainWindow.g.cs
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\View\AboutWindow.g.cs
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\View\ConnectWindow.g.cs
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\View\ServerBrowseWindow.g.cs
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\View\UserControls\TreeViewUserControl.g.cs
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\App.g.cs
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\WPFDBApp_MarkupCompile.cache
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\WPFDBApp_MarkupCompile.lref
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\App.baml
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\MainWindow.baml
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\View\AboutWindow.baml
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\View\UserControls\TreeViewUserControl.baml
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\WPFDBApp.g.resources
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\WPFDBApp.Properties.Resources.resources
+G:\HAD\WPFDBApp - Copy (2)\WPFDBApp\obj\Debug\WPFDBApp.csproj.GenerateResource.Cache
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\bin\Debug\WPFDBApp.exe.config
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\obj\Debug\WPFDBApp.exe
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\obj\Debug\WPFDBApp.pdb
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\bin\Debug\Resources\sql.xshd
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\bin\Debug\XMLFileSchemaForValidation.xsd
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\bin\Debug\WPFDBApp.exe
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\bin\Debug\WPFDBApp.pdb
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\bin\Debug\DBClient.dll
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\bin\Debug\DotNetZip.dll
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\bin\Debug\ICSharpCode.AvalonEdit.dll
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\bin\Debug\log4net.dll
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\bin\Debug\Microsoft.Expression.Interactions.dll
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\bin\Debug\System.Windows.Interactivity.dll
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\bin\Debug\TreeStruct.dll
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\bin\Debug\DBClient.pdb
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\bin\Debug\TreeStruct.pdb
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\bin\Debug\DotNetZip.xml
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\bin\Debug\ICSharpCode.AvalonEdit.xml
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\bin\Debug\log4net.xml
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\bin\Debug\Microsoft.Expression.Interactions.xml
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\bin\Debug\System.Windows.Interactivity.xml
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\obj\Debug\WPFDBApp.csprojResolveAssemblyReference.cache
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\obj\Debug\View\ConnectWindow.baml
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\obj\Debug\View\ServerBrowseWindow.baml
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\obj\Debug\MainWindow.g.cs
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\obj\Debug\View\AboutWindow.g.cs
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\obj\Debug\View\ConnectWindow.g.cs
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\obj\Debug\View\ServerBrowseWindow.g.cs
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\obj\Debug\View\UserControls\TreeViewUserControl.g.cs
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\obj\Debug\App.g.cs
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\obj\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\obj\Debug\WPFDBApp_MarkupCompile.cache
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\obj\Debug\WPFDBApp_MarkupCompile.lref
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\obj\Debug\App.baml
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\obj\Debug\MainWindow.baml
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\obj\Debug\View\AboutWindow.baml
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\obj\Debug\View\UserControls\TreeViewUserControl.baml
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\obj\Debug\WPFDBApp.g.resources
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\obj\Debug\WPFDBApp.Properties.Resources.resources
+C:\Users\Olha\Desktop\WPFDBApp\WPFDBApp\obj\Debug\WPFDBApp.csproj.GenerateResource.Cache

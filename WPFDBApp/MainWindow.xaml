@@ -1,0 +1,202 @@
+﻿<Window x:Class="WPFDBApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:i="clr-namespace:System.Windows.Interactivity;assembly=System.Windows.Interactivity"
+        xmlns:avalonBehaviors="clr-namespace:WPFDBApp.Services.AvalonEditBehaviors"
+        xmlns:valConverter="clr-namespace:WPFDBApp.ValueConverter"
+        xmlns:UserControl="clr-namespace:WPFDBApp.View.UserControls"
+        mc:Ignorable="d" Loaded="Window_Loaded" Closing="Window_Closing"
+        Title="Data Base Viewer" MinHeight="525" MinWidth="850" Icon="./Images/dbs.png">
+
+    <Window.Resources>
+        <!-- File -->
+        <Image x:Key="iconNew" x:Shared="False" Source="Images/NewDocumentHS.png" Width="16" Height="16" />
+        <Image x:Key="iconSaveProjectAs" x:Shared="False" Source="Images/Save_project.png" Width="16" Height="16" />
+        <Image x:Key="iconOpen" x:Shared="False" Source="Images/OpenHS.png" Width="16" Height="16" />
+        <Image x:Key="iconSave" x:Shared="False" Source="Images/Save.png" Width="16" Height="16" />
+        <Image x:Key="iconSaveAs" x:Shared="False" Source="Images/Save_as.png" Width="16" Height="16" />
+        <Image x:Key="iconConnected" x:Shared="False" Source="Images/connected-24.png" Width="16" Height="16" />
+        <Image x:Key="iconDisconnected" x:Shared="False" Source="Images/disconnected-24.png" Width="16" Height="16" />
+        <Image x:Key="iconClose" Source="Images/Close.png" Width="16" Height="16" />
+        <!-- Edit -->
+        <Image x:Key="iconUndo" x:Shared="False" Source="Images/Edit_UndoHS.png" Width="16" Height="16" />
+        <Image x:Key="iconRedo" x:Shared="False" Source="Images/Edit_RedoHS.png" Width="16" Height="16" />
+        <Image x:Key="iconCut" x:Shared="False" Source="Images/CutHS.png" Width="16" Height="16" />
+        <Image x:Key="iconCopy" x:Shared="False" Source="Images/CopyHS.png" Width="16" Height="16" />
+        <Image x:Key="iconPaste" x:Shared="False" Source="Images/PasteHS.png" Width="16" Height="16" />
+        <Image x:Key="iconDelete" x:Shared="False" Source="Images/DeleteHS.png" Width="16" Height="16" />
+        <Image x:Key="iconFind" x:Shared="False" Source="Images/FindHS.png" Width="16" Height="16" />
+        <Image x:Key="iconFont" x:Shared="False" Source="Images/FontHS.png" Width="16" Height="16" />
+
+        <Style TargetType="MenuItem">
+            <Setter Property="Margin" Value="5" />
+        </Style>
+
+        <!--DataGrid Style-->
+        <Style TargetType="DataGridCell" x:Key="styleForDGCell">
+            <Setter Property="BorderThickness" Value="1,0,0,0" />
+            <Setter Property="BorderBrush" Value="Black" />
+        </Style>
+        <Style TargetType="DataGridCell" x:Key="styleForDGCellLeft">
+            <Setter Property="BorderThickness" Value="0" />
+            <Setter Property="BorderBrush" Value="Black" />
+        </Style>
+        <Style TargetType="DataGridRow" x:Key="styleForDGRow">
+            <Setter Property="BorderThickness" Value="0,0,0,1" />
+            <Setter Property="BorderBrush" Value="Black" />
+        </Style>
+
+    </Window.Resources>
+    <DockPanel LastChildFill="True">
+        <!-- Меню -->
+        <Menu DockPanel.Dock="Top">
+            <MenuItem Header="_File">
+                <MenuItem Header="_Open Project..." ToolTip="Open existing progect"
+                          Command="{Binding OpenCommand}" InputGestureText="Ctrl+O"
+                          Icon="{StaticResource iconOpen}"/>
+                <MenuItem Header="Save Project As..." ToolTip="Save project as..."
+                          Command="{Binding SaveProjectAsCommand}"
+                          Icon="{StaticResource iconSaveProjectAs}">
+                    <MenuItem.CommandParameter>
+                        <MultiBinding Converter="{x:Static valConverter:MultiBindingConverter.Instance}">
+                            <Binding ElementName="TreeViewUC" Path="TreeRootNode"/>
+                            <Binding ElementName="TreeViewUC" Path="TreeViewRootItem"/>
+                        </MultiBinding>
+                    </MenuItem.CommandParameter>
+                </MenuItem>
+                <MenuItem Header="Save SQL Script _As..." ToolTip="Save sql script as..."
+                          Command="{Binding SaveAsCommand}"
+                          CommandTarget="{Binding ElementName=MyAvalonEdit, Path=ScriptText}"
+                          CommandParameter="{Binding ElementName=TreeViewUC, Path=SQLScript}"
+                          Icon="{StaticResource iconSaveAs}"/>
+                <Separator />
+                <MenuItem Header="Connect" ToolTip="Connect to the server"
+                          Command="{Binding ShowConnectWindowCommand}"
+                          Icon="{StaticResource iconConnected}" />
+                <MenuItem Header="Disconnect" ToolTip="Disconnect from the server"
+                          Command="{Binding DisconnectServerCommand}"
+                          Icon="{StaticResource iconDisconnected}" />
+                <Separator />
+                <MenuItem Header="E_xit" Command="{Binding ExitCommand}"
+                          Icon="{StaticResource iconClose}"/>
+            </MenuItem>
+            <MenuItem Header="_Edit">
+                <MenuItem Header="_Undo" Command="{Binding UndoCommand}"
+                    CommandTarget="{Binding ElementName=MyAvalonEdit, Path=ScriptText}" InputGestureText="Ctrl+Z"
+                          Icon="{StaticResource iconUndo}"  />
+                <MenuItem Header="_Redo" Command="{Binding RedoCommand}"
+                    CommandTarget="{Binding ElementName=MyAvalonEdit, Path=ScriptText}" InputGestureText="Ctrl+Y"
+                          Icon="{StaticResource iconRedo}" />
+                <Separator></Separator>
+                <MenuItem Header="Cu_t" Command="{Binding CutCommand}" InputGestureText="Ctrl+X"
+                    Icon="{StaticResource iconCut}" CommandTarget="{Binding ElementName=MyAvalonEdit, Path=ScriptText}" />
+                <MenuItem Header="_Copy" Command="{Binding CopyCommand}" InputGestureText="Ctrl+C"
+                    Icon="{StaticResource iconCopy}" CommandTarget="{Binding ElementName=MyAvalonEdit, Path=ScriptText}" />
+                <MenuItem Header="_Paste" Command="{Binding PasteCommand}" InputGestureText="Ctrl+V"
+                    Icon="{StaticResource iconPaste}" CommandTarget="{Binding ElementName=MyAvalonEdit, Path=ScriptText}" />
+            </MenuItem>
+            <MenuItem Header="_Help">
+                <MenuItem Header="_About" Command="{Binding HelpCommand}"/>
+            </MenuItem>
+            <MenuItem Header="_Exit" Command="{Binding ExitCommand}"/>
+        </Menu>
+        <ToolBarTray DockPanel.Dock="Top">
+            <ToolBar>
+                <ToolBar.Resources>
+                    <Style TargetType="{x:Type Image}">
+                        <Style.Triggers>
+                            <DataTrigger Binding="{Binding RelativeSource={RelativeSource AncestorType={x:Type ButtonBase}, AncestorLevel=1}, Path=IsEnabled}" Value="False">
+                                <Setter Property="Opacity" Value="0.30" />
+                            </DataTrigger>
+                        </Style.Triggers>
+                    </Style>
+                </ToolBar.Resources>
+                <Button Width="23" ToolTip="Connect to the server" Content="{StaticResource iconConnected}"
+                            Command="{Binding ShowConnectWindowCommand}"/>
+                <Button Width="23" ToolTip="Disconnect from the server" Content="{StaticResource iconDisconnected}"
+                        Command="{Binding DisconnectServerCommand}"/>
+                <Separator/>
+                <Button Width="23" ToolTip="Open existing progect" Content="{StaticResource iconOpen}"
+                        Command="{Binding OpenCommand}"/>
+                <Button Width="23" ToolTip="Save project as..." Content="{StaticResource iconSaveProjectAs}"
+                        Command="{Binding SaveProjectAsCommand}">
+                    <Button.CommandParameter>
+                        <MultiBinding Converter="{x:Static valConverter:MultiBindingConverter.Instance}">
+                            <Binding ElementName="TreeViewUC" Path="TreeRootNode"/>
+                            <Binding ElementName="TreeViewUC" Path="TreeViewRootItem"/>
+                        </MultiBinding>
+                    </Button.CommandParameter>
+                </Button>
+                <Button Width="23" ToolTip="Save sql script as..." Content="{StaticResource iconSaveAs}"
+                    Command="{Binding SaveAsCommand}" CommandTarget="{Binding ElementName=MyAvalonEdit, Path=ScriptText}"
+                    CommandParameter="{Binding ElementName=TreeViewUC, Path=SQLScript}"/>
+                <Separator/>
+                <Button Width="23" Content="{StaticResource iconUndo}" Command="{Binding UndoCommand}"
+                        CommandTarget="{Binding ElementName=MyAvalonEdit, Path=ScriptText}" FocusManager.IsFocusScope="True"/>
+                <Button Width="23" Content="{StaticResource iconRedo}" Command="{Binding RedoCommand}"
+                        CommandTarget="{Binding ElementName=MyAvalonEdit, Path=ScriptText}" FocusManager.IsFocusScope="True"/>
+                <Separator />
+                <Button Width="23" Content="{StaticResource iconCut}" Command="{Binding CutCommand}"
+                        CommandTarget="{Binding ElementName=MyAvalonEdit, Path=ScriptText}" FocusManager.IsFocusScope="True"/>
+                <Button Width="23" Content="{StaticResource iconCopy}" Command="{Binding CopyCommand}"
+                        CommandTarget="{Binding ElementName=MyAvalonEdit, Path=ScriptText}" FocusManager.IsFocusScope="True"/>
+                <Button Width="23" Content="{StaticResource iconPaste}" Command="{Binding PasteCommand}"
+                        CommandTarget="{Binding ElementName=MyAvalonEdit, Path=ScriptText}" FocusManager.IsFocusScope="True"/>
+            </ToolBar>
+        </ToolBarTray>
+
+        <StatusBar DockPanel.Dock="Bottom" Background="{Binding StatusColor}" Foreground="White" FontWeight="Bold"  Height="22" Margin="0 3 0 0" >
+            <StatusBarItem>
+                <TextBlock Text="{Binding Status}"/>
+            </StatusBarItem>
+        </StatusBar>
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="0.4*" MinWidth="300"/>
+                <ColumnDefinition Width="5" />
+                <ColumnDefinition Width="*" MinWidth="200"/>
+                <ColumnDefinition Width="5" />
+                <ColumnDefinition Width="*" MinWidth="150" MaxWidth="400"/>
+            </Grid.ColumnDefinitions>
+
+            <UserControl:TreeViewUserControl x:Name="TreeViewUC" Grid.Column="0"
+                TreeSelectedItem="{Binding SelectedItem_, UpdateSourceTrigger=PropertyChanged}"
+                SQLScript="{Binding SqlScript, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"
+                TreeViewRootItem="{Binding Items, UpdateSourceTrigger=PropertyChanged}"
+                TreeRootNode="{Binding RootNode, UpdateSourceTrigger=PropertyChanged}"/>
+
+            <GridSplitter Grid.Column="1" Width="7" HorizontalAlignment="Stretch"  Background="LightSteelBlue" Opacity="0.2" />
+
+            <DockPanel LastChildFill="True" Grid.Column="2" x:Name="SqlScriptContainer">
+                <avalonEdit:TextEditor
+                    xmlns:avalonEdit="http://icsharpcode.net/sharpdevelop/avalonedit"  
+                    Name="MyAvalonEdit" FontFamily="Consolas" FontSize="10pt"
+                    Width="{Binding ElementName=SqlScriptContainer,Path=ActualWidth}"
+                    ShowLineNumbers="True" LineNumbersForeground="#FF2B91AF">
+                    <i:Interaction.Behaviors>
+                        <avalonBehaviors:AvalonEditBehaviour ScriptText="{Binding ElementName=TreeViewUC, Path=SQLScript, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}"/>
+                    </i:Interaction.Behaviors>
+                </avalonEdit:TextEditor>
+            </DockPanel>
+            
+            <GridSplitter Grid.Column="3" Width="7" HorizontalAlignment="Stretch"  Background="LightSteelBlue" Opacity="0.2" />
+
+            <DockPanel LastChildFill="True" Grid.Column="4">
+                <TextBlock Text=" Properties" DockPanel.Dock="Top"/>
+                <DataGrid HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                    ItemsSource="{Binding ElementName=TreeViewUC, Path=TreeSelectedItem.Element.Data.Attributes, Converter={x:Static valConverter:DataGridItemsConverter.Instance}, UpdateSourceTrigger=PropertyChanged}"
+                    AutoGenerateColumns="False" HeadersVisibility="Column" BorderThickness="0"
+                    RowStyle="{StaticResource ResourceKey=styleForDGRow}"
+                    CellStyle="{StaticResource ResourceKey=styleForDGCell}">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header=" parameter" Binding="{Binding Key}" Width="0.7*" IsReadOnly="True" CellStyle="{StaticResource ResourceKey=styleForDGCellLeft}"/>
+                        <DataGridTextColumn Header=" value" Binding="{Binding Value}" Width="1*" IsReadOnly="True"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </DockPanel>
+
+        </Grid>
+    </DockPanel>
+</Window>

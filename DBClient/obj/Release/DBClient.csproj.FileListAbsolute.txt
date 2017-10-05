@@ -1,0 +1,4 @@
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\DBClient\bin\Release\DBClient.dll
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\DBClient\bin\Release\DBClient.pdb
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\DBClient\obj\Release\DBClient.dll
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\DBClient\obj\Release\DBClient.pdb

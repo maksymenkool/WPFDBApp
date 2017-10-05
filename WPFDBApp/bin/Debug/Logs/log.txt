@@ -1,0 +1,11 @@
+2017-10-05 19:21:12,648 [8] INFO  MainWindow - Application Starting.
+2017-10-05 19:21:17,774 [8] INFO  MainWindow - The Connect window is loaded.
+2017-10-05 19:21:20,502 [8] INFO  ConnectWindowVM - Attempt to connect to the server: OLMAX-PC\SQLEXPRESS1.
+2017-10-05 19:21:20,630 [8] INFO  ConnectWindowVM - Connection to server: OLMAX-PC\SQLEXPRESS1 succeeded.
+2017-10-05 19:21:22,357 [8] INFO  ConnectWindow - The Connect window was closed.
+2017-10-05 19:21:22,439 [8] INFO  TreeViewUserControl - The metadata is loaded.
+2017-10-05 19:22:00,294 [8] INFO  MainWindowVM - The user tries disconnect from the server.
+2017-10-05 19:22:02,476 [8] INFO  MainWindowVM - Server is disconnected.
+2017-10-05 19:23:26,535 [8] INFO  MainWindowVM - The user tries to save data in file.
+2017-10-05 19:23:28,460 [8] INFO  MainWindowVM - Data is empty. No data to save.
+2017-10-05 19:23:38,013 [8] INFO  MainWindow - The application was closed.

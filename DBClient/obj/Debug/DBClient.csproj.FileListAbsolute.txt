@@ -1,0 +1,10 @@
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\DBClient\bin\Debug\DBClient.dll
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\DBClient\bin\Debug\DBClient.pdb
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\DBClient\obj\Debug\DBClient.csprojResolveAssemblyReference.cache
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\DBClient\obj\Debug\DBClient.dll
+C:\Users\maksymenko.o\documents\visual studio 2017\Projects\WPFDBApp\DBClient\obj\Debug\DBClient.pdb
+G:\HAD\WPFDBApp - Copy (2)\DBClient\bin\Debug\DBClient.dll
+G:\HAD\WPFDBApp - Copy (2)\DBClient\bin\Debug\DBClient.pdb
+G:\HAD\WPFDBApp - Copy (2)\DBClient\obj\Debug\DBClient.csprojResolveAssemblyReference.cache
+G:\HAD\WPFDBApp - Copy (2)\DBClient\obj\Debug\DBClient.dll
+G:\HAD\WPFDBApp - Copy (2)\DBClient\obj\Debug\DBClient.pdb

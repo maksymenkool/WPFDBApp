@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26430.6
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WPFDBApp", "WPFDBApp\WPFDBApp.csproj", "{C4AD69AB-9E2C-4BF0-A8A9-0F809DF89307}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DBClient", "DBClient\DBClient.csproj", "{89AF8CDE-FEBB-4F25-AB08-F4007215E72D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TreeStruct", "TreeStruct\TreeStruct.csproj", "{0A8A8C72-0E70-4AC8-8C70-47C6950382A5}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C4AD69AB-9E2C-4BF0-A8A9-0F809DF89307}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4AD69AB-9E2C-4BF0-A8A9-0F809DF89307}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4AD69AB-9E2C-4BF0-A8A9-0F809DF89307}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4AD69AB-9E2C-4BF0-A8A9-0F809DF89307}.Release|Any CPU.Build.0 = Release|Any CPU
+		{89AF8CDE-FEBB-4F25-AB08-F4007215E72D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{89AF8CDE-FEBB-4F25-AB08-F4007215E72D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{89AF8CDE-FEBB-4F25-AB08-F4007215E72D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{89AF8CDE-FEBB-4F25-AB08-F4007215E72D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A8A8C72-0E70-4AC8-8C70-47C6950382A5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A8A8C72-0E70-4AC8-8C70-47C6950382A5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A8A8C72-0E70-4AC8-8C70-47C6950382A5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A8A8C72-0E70-4AC8-8C70-47C6950382A5}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(TeamFoundationVersionControl) = preSolution
+		SccNumberOfProjects = 4
+		SccEnterpriseProvider = {4CA58AB2-18FA-4F8D-95D4-32DDF27D184C}
+		SccTeamFoundationServer = http://dev-tfs.kharkov.dbbest.com:8080/tfs/studentprojects
+		SccLocalPath0 = .
+		SccProjectUniqueName1 = WPFDBApp\\WPFDBApp.csproj
+		SccProjectName1 = WPFDBApp
+		SccLocalPath1 = WPFDBApp
+		SccProjectUniqueName2 = DBClient\\DBClient.csproj
+		SccProjectName2 = DBClient
+		SccLocalPath2 = DBClient
+		SccProjectUniqueName3 = TreeStruct\\TreeStruct.csproj
+		SccProjectName3 = TreeStruct
+		SccLocalPath3 = TreeStruct
+	EndGlobalSection
+EndGlobal
